@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            min-width: 650px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        .chart {
+            display: grid;
+            border: 2px solid #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-row {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            background-color: #DCDCDC;
+        }
+
+        .chart-row:nth-child(odd) {
+            background-color: #C0C0C0;
+        }
+
+        .chart-period {
+            color: #fff;
+            background-color: #708090 !important;
+            border-bottom: 2px solid #000;
+            grid-template-columns: 50px repeat(14, 1fr);
+        }
+
+        .chart-lines {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            grid-template-columns: 50px repeat(14, 1fr);
+        }
+
+        .chart-period>span {
+            text-align: center;
+            font-size: 13px;
+            align-self: center;
+            font-weight: bold;
+            padding: 15px 0;
+        }
+
+        .chart-lines>span {
+            display: block;
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        .chart-row-item {
+            background-color: #808080;
+            border: 1px solid #000;
+            border-top: 0;
+            border-left: 0;
+            padding: 20px 0;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .chart-row-bars {
+            list-style: none;
+            display: grid;
+            padding: 15px 0;
+            margin: 0;
+            grid-template-columns: repeat(14, 1fr);
+            grid-gap: 10px 0;
+            border-bottom: 1px solid #000;
+        }
+
+        li {
+            font-weight: 450;
+            text-align: left;
+            font-size: 15px;
+            min-height: 15px;
+            background-color: #708090;
+            padding: 5px 15px;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        ul .chart-li-one {
+            grid-column: 1/3;
+            background-color: #588BAE;
+        }
+
+        ul .chart-li-two-a {
+            grid-column: 2/4;
+            background-color: #0080FF;
+        }
+
+        ul .chart-li-two-b {
+            grid-column: 2/14;
+            background-color: #4682B4;
+        }
+
+        ul .chart-li-three {
+            grid-column: 3/8;
+            background-color: #57A0D3;
+        }
+
+        ul .chart-li-three-b {
+            grid-column: 3/13;
+            background-color: #57A0D3;
+        }
+
+        ul .chart-li-four {
+            grid-column: 6/15;
+            background-color: #0E4D92;
+        }
+
+        ul .chart-li-five {
+            grid-column: 13/15;
+            background-color: #4F97A3;
+        }
+
+        ul .chart-li-six {
+            grid-column: 1/15;
+            background-color: #73C2FB;
+        }
+
+        ul .chart-li-seven {
+            grid-column: 8/12;
+            background-color: #0080FF;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Timeframe</h1>
+    <p>Our timeline is constrained through our ambitious project which requires extensive research and development. Within a 14 week timeline it is difficult to produce a final product, however our plan is detailed in the chart below:</p>
+    <p>In our initial 14 week scope, we aim to create a solid foundation for our game, in which features may be built around</p>
+    <p>The flow of our project attempts to map out attainable progress weekly. Initially, we create our ideas for the project and plan out how we will achieve our aims. Following/during this, we will hire skilled workers who will develop our program, whilst researching our environment, entry, global economics and the current virus (with its impact on the economy for future simulation) </p>
+    <p>During our design of our base game environment and its graphics, we will be working on our unity (c++) skills to be able to understand and develop our work further by ourselves, rather than relying on our hired workers.</p>
+    <p>During development and the whole process we aim to schedule frequent meetings to monitor our progress along side our plans. After some weeks of development we will begin alpha testing inhouse to detect any bugs, and produce our V0.1 product.</p>
+    
+    <div class="container">
+        <div class="chart">
+            <div class="chart-row chart-period">
+                <div class="chart-row-item"></div>
+                <span>Week 1</span><span>Week 2</span><span>Week 3</span>
+                <span>Week 4</span><span>Week 5</span><span>Week 6</span>
+                <span>Week 7</span><span>Week 8</span><span>Week 9</span>
+                <span>Week 10</span><span>Week 11</span><span>Week 12</span><span>Week 13</span><span>Week 14</span>
+            </div>
+            <div class="chart-row chart-lines">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="chart-row">
+                <div class="chart-row-item">1</div>
+                <ul class="chart-row-bars">
+                    <li class="chart-li-one">Ideas/Planning</li>
+                </ul>
+            </div>
+            <div class="chart-row">
+                <div class="chart-row-item">2</div>
+                <ul class="chart-row-bars">
+                    <li class="chart-li-two-a">Hiring</li>
+                    <li class="chart-li-two-b">Analysis + Research</li>
+                </ul>
+            </div>
+            <div class="chart-row">
+                <div class="chart-row-item">3</div>
+                <ul class="chart-row-bars">
+                    <li class="chart-li-three">Design of initial environment</li>
+                    <li class="chart-li-three-b">Skills development</li>
+                </ul>
+
+            </div>
+            <div class="chart-row">
+                <div class="chart-row-item">4</div>
+                <ul class="chart-row-bars">
+                    <li class="chart-li-four">Development</li>
+                </ul>
+            </div>
+            <div class="chart-row">
+                <div class="chart-row-item">5</div>
+                <ul class="chart-row-bars">
+                    <li class="chart-li-five">Alpha testing</li>
+                </ul>
+            </div>
+            <div class="chart-row">
+                <div class="chart-row-item">6</div>
+                <ul class="chart-row-bars">
+                    <li class="chart-li-six">Meetings</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<p> <b>Gantt Chart Created following:</b> <a href="https://www.freecodecamp.org/news/create-gantt-chart-using-css-grid/">FreeCodeChamp - Creating a gantt chart with css</a>
+
+
+</body>
